@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Swimming Pool Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Swimming Pool Monitoring System</h1>
+    </header>
+    <div class="container">
+        <div class="section" id="home">
+            <h2>Introduction to Smart Swimming Pool</h2>
+            <p>Swimming pools are a popular source of recreation, but ensuring the safety of swimmers and maintaining optimal water quality are crucial concerns. This project introduces the IoT-based Smart Swimming Pool Monitoring System, designed to enhance safety and water quality management. Situated in Rwanda, this system leverages state-of-the-art technology to provide a safer and more enjoyable swimming experience.</p>
+        </div>
+        <div class="section" id="objectives">
+            <h2>Objectives</h2>
+            <ul>
+                <li><strong>Water Quality Monitoring:</strong> Develop a robust IoT-based system capable of continuous and real-time monitoring and maintenance of swimming pool water quality, ensuring it consistently meets established safety and hygiene standards.</li>
+                <li><strong>Swimmer Safety:</strong> Implement an integrated real-time heartbeat monitoring system using wearable devices or underwater sensors to promptly detect irregularities in swimmers' heart rates and enhance their safety while swimming.</li>
+                <li><strong>Data Analytics and Reporting:</strong> Employ advanced data analytics algorithms to process the collected data, generating insights, trends, and real-time reporting for pool operators and relevant authorities, enabling data-driven decision-making.</li>
+            </ul>
+        </div>
+        <div class="section" id="components">
+            <h2>System Components</h2>
+            <h3>Wearable Monitoring Device</h3>
+            <ul>
+                <li>Heartbeat Sensor: Monitors the swimmer's heart rate.</li>
+                <li>Vibrator Motor: Provides haptic feedback to the swimmer in case of abnormal heart rate detection.</li>
+                <li>ESP8266 Module: Facilitates wireless communication and data transmission.</li>
+            </ul>
+            <h3>Underwater Monitoring System</h3>
+            <ul>
+                <li>pH Sensor: Measures the acidity/alkalinity of the pool water.</li>
+                <li>Water Temperature Sensor: Monitors the temperature of the pool water.</li>
+                <li>ESP8266 Module: Facilitates wireless communication and data transmission.</li>
+            </ul>
+            <h3>Cloud-Based Platform</h3>
+            <ul>
+                <li>ThingSpeak Cloud: Collects and stores data from the ESP8266 modules.</li>
+                <li>Database: Manages historical data and supports data retrieval.</li>
+                <li>Dashboard: Provides real-time data visualization and alerts.</li>
+            </ul>
+        </div>
+        <div class="section" id="working-principle">
+            <h2>Working Principle</h2>
+            <h3>Data Collection</h3>
+            <p>The wearable device continuously monitors the swimmer's heartbeat and sends the data via the ESP8266 module. The underwater system continuously measures pH and water temperature, sending this data via its ESP8266 module.</p>
+            <h3>Data Transmission</h3>
+            <p>Both ESP8266 modules use secure Wi-Fi communication to transmit the collected data to the ThingSpeak Cloud platform.</p>
+            <h3>Cloud Processing</h3>
+            <p>The ThingSpeak Cloud platform receives the data and stores it in a centralized database. Real-time data and historical data are processed and analyzed on the cloud.</p>
+            <h3>Data Visualization and Alerts</h3>
+            <p>The cloud platform is integrated with a dashboard that pool operators and authorities can access. The dashboard visualizes real-time data, historical trends, and analysis results. Users can set customizable alert thresholds for pH levels, water temperature, and heartbeat rates. Alerts are generated and sent to users when the collected data exceeds these predefined thresholds, enabling timely interventions.</p>
+            <h3>Proactive Interventions</h3>
+            <p><strong>Safety Alerts:</strong> If the heartbeat sensor detects an irregular heart rate, an immediate alert is sent to the pool operator, and the vibrator motor provides haptic feedback to the swimmer, prompting them to leave the pool if necessary.</p>
+            <p><strong>Water Quality Alerts:</strong> If the pH level or water temperature goes beyond safe limits, alerts are triggered, allowing pool operators to take corrective actions such as adjusting chemical levels or temperature settings.</p>
+        </div>
+        <div class="section" id="requirements">
+            <h2>Requirements to Accomplish and Solve the Problem 🧰</h2>
+            <ul>
+                <li>ESP8266 Wi-Fi module</li>
+                <li>Heartbeat sensor (pulse rate sensor)</li>
+                <li>pH sensor</li>
+                <li>Temperature sensors</li>
+                <li>Vibrator motor</li>
+                <li>Resistors</li>
+                <li>Transistors</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="progress-tracking">
+        <h2>Progress Tracking</h2>
+        <div class="image-container">
+            <img src="image1.jpg" alt="Image 1" class="progress-image">
+            <img src="image2.jpg" alt="Image 2" class="progress-image">
+            <img src="image3.jpg" alt="Image 3" class="progress-image">
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Smart Swimming Pool Monitoring System</p>
+    </footer>
+</body>
+</html>
